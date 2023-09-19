@@ -23,7 +23,11 @@ public class RotateImage_48 {
         }
 
     }
-
+    /**
+     * Rotates a matrix by 90 degrees clockwise.
+     *
+     * @param matrix  The matrix to be rotated.
+     */
     private static void rotationOfMatrixBy90Degrees(int[][] matrix) {
         //matrix converts to matrix T
         for (int i = 0; i < matrix.length; i++) {

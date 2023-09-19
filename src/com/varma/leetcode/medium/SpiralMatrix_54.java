@@ -17,7 +17,12 @@ public class SpiralMatrix_54 {
         }
         System.out.println(spiralMatrix(matrix));
     }
-
+    /**
+     * Traverses a matrix in a spiral order and returns the elements in a list.
+     *
+     * @param matrix  The matrix to be traversed.
+     * @return        A list containing the elements in spiral order.
+     */
     private static List<Integer> spiralMatrix(int[][] matrix) {
         List<Integer> list=new ArrayList<>();
         int m= matrix.length;

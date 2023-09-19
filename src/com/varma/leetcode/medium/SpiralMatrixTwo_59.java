@@ -7,7 +7,6 @@ public class SpiralMatrixTwo_59 {
         Scanner sc=new Scanner(System.in);
         int num=sc.nextInt();
         int[][] res=spiralMatrixTwo(num);
-
         for (int i = 0; i < res.length ; i++) {
             for (int j = 0; j <res[i].length ; j++) {
                 System.out.print(res[i][j]+" ");
@@ -15,7 +14,12 @@ public class SpiralMatrixTwo_59 {
             System.out.println();
         }
     }
-
+    /**
+     * Generates a spiral matrix of size num x num.
+     *
+     * @param num  The size of the spiral matrix.
+     * @return     The generated spiral matrix.
+     */
     private static int[][] spiralMatrixTwo(int num) {
         int[][] matrix=new int[num][num];
         int rmin=0;
@@ -37,7 +41,7 @@ public class SpiralMatrixTwo_59 {
                 count++;
             }
             cmax--;
-            //bottom border888888888888888888888888888888888888888888
+            //bottom border
             for (int i = cmax; i >=cmin ; i--) {
                 matrix[rmax][i]=count;
                 count++;

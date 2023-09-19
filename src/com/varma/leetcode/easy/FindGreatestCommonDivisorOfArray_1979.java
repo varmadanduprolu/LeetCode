@@ -21,6 +21,13 @@ public class FindGreatestCommonDivisorOfArray_1979 {
         return util(m,n);
     }
 
+    /**
+     * Calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.
+     *
+     * @param m  The first number.
+     * @param n  The second number.
+     * @return   The greatest common divisor (GCD) of the two numbers.
+     */
     private static int util(int m, int n) {
 
             while (n!=0) {

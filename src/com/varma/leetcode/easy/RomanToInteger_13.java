@@ -11,6 +11,12 @@ public class RomanToInteger_13 {
         System.out.println(romanToInt(symbol));
     }
 
+    /**
+     * Converts a Roman numeral to an integer.
+     *
+     * @param symbol  The Roman numeral as a string.
+     * @return  The integer representation of the Roman numeral.
+     */
     private static int romanToInt(String symbol) {
         Map<Character, Integer> map=new HashMap<>();
         map.put('I', 1);

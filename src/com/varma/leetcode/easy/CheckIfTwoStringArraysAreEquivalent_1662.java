@@ -17,6 +17,14 @@ public class CheckIfTwoStringArraysAreEquivalent_1662 {
         }
         System.out.println(arrayStringsAreEqual(word1,word2));
     }
+
+    /**
+     * Compares two arrays of strings to check if their concatenated forms are equal.
+     *
+     * @param word1  The first array of strings.
+     * @param word2  The second array of strings.
+     * @return  True if the concatenated forms of the arrays are equal, false otherwise.
+     */
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
          StringBuilder ans1=new StringBuilder();
          StringBuilder ans2=new StringBuilder();

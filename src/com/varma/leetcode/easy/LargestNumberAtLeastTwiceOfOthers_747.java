@@ -30,6 +30,12 @@ public class LargestNumberAtLeastTwiceOfOthers_747 {
         return -1;
     }
 
+    /**
+     * Finds the index of the largest number in the array that is at least twice as large as every other number.
+     *
+     * @param nums  The array of numbers.
+     * @return      The index of the largest number that satisfies the condition, or -1 if no such number exists.
+     */
     private static int largestNumberAtLeastTwiceOfOthers1(int[] nums) {
         int max=nums[0];
         int sec_max=0;

@@ -14,6 +14,12 @@ public class MajorityElement_169 {
 
     }
 
+    /**
+     * Finds the majority element in an array, if it exists.
+     *
+     * @param num  The array of numbers.
+     * @return     The majority element if it exists, otherwise -1.
+     */
     private static int majorityElement(int[] num) {
         int candidate=num[0];
         int count=1;
@@ -38,7 +44,6 @@ public class MajorityElement_169 {
               return candidate;
         else
             return -1;
-
     }
 
 }

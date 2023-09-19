@@ -9,6 +9,12 @@ public class FibonacciNumber_509 {
         System.out.println(fibonacciNumber(num));
     }
 
+    /**
+     * Calculates the nth Fibonacci number.
+     *
+     * @param num  The position of the Fibonacci number to calculate.
+     * @return The nth Fibonacci number.
+     */
     private static int fibonacciNumber(int num) {
         if (num<2) return  num;
         int first=0;
@@ -19,7 +25,5 @@ public class FibonacciNumber_509 {
             second=sum;
         }
         return second;
-
-
     }
 }

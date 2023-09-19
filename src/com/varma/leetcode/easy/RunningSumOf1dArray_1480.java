@@ -15,6 +15,12 @@ public class RunningSumOf1dArray_1480 {
         System.out.println(Arrays.toString(runningSumOf1dArray(nums)));
     }
 
+    /**
+     * Calculates the running sum of a 1D array.
+     *
+     * @param nums  The input array of numbers.
+     * @return      The array of running sums.
+     */
     private static int[] runningSumOf1dArray(int[] nums) {
         int sum=0;
         int[] runningSum=new int[nums.length];

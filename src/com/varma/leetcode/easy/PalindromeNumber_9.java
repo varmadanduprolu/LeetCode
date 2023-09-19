@@ -9,6 +9,12 @@ public class PalindromeNumber_9 {
         System.out.println(palindromeNumber(num));
     }
 
+    /**
+     * Checks if a number is a palindrome.
+     *
+     * @param num  The number to check.
+     * @return     True if the number is a palindrome, false otherwise.
+     */
     private static boolean palindromeNumber(int num) {
         int res=0;
         int num1=num;

@@ -15,7 +15,13 @@ public class TrappingRainWater_42 {
     }
 
 
-
+    /**
+     * Calculates the maximum height to the left and right of each element in an array.
+     *
+     * @param preMax  The array to store the maximum height to the left of each element.
+     * @param sufMax  The array to store the maximum height to the right of each element.
+     * @param nums    The array of heights.
+     */
     private static void maxFunction(int[] preMax, int[] sufMax, int[] nums) {
         int pmax=nums[0];
         int smax=nums[nums.length-1];
@@ -30,6 +36,13 @@ public class TrappingRainWater_42 {
             j--;
         }
     }
+
+    /**
+     * Calculates the amount of trapped rainwater in an array of heights.
+     *
+     * @param nums  The array of heights.
+     * @return      The amount of trapped rainwater.
+     */
     private static int trappingRainWater(int[] nums) {
         int preMax[]=new int[nums.length];
         int sufMax[]=new int[nums.length];
@@ -37,9 +50,8 @@ public class TrappingRainWater_42 {
         int amount =0;
         for (int i = 1; i < nums.length-1 ; i++) {
                 if (preMax[i-1]>sufMax[i+1]){
-                    if (sufMax[i+1]>nums[i]){
+                    if (sufMax[i+1]>nums[i])
                         amount +=sufMax[i+1]-nums[i];
-                    }
                 }
                 else{
                     if (preMax[i-1]>nums[i])

@@ -10,15 +10,31 @@ public class PowerOfNumber_50 {
         int n=sc.nextInt();
         System.out.println(myPow(x,n));
     }
+
+    /**
+     * Calculates the power of a number using the exponentiation by squaring algorithm.
+     *
+     * @param x  The base number.
+     * @param n  The exponent.
+     * @return   The result of x raised to the power of n.
+     */
     public static double myPow(double x, int n) {
-       if(n<0) return  util(1/x, Math.abs((long)n));
-       else return util(x, n);
+       if(n<0) return  power(1/x, Math.abs((long)n));
+       else return power(x, n);
     }
-    public static double util(double x, long n) {
+
+    /**
+     * Calculates the power of a number using the exponentiation by squaring algorithm.
+     *
+     * @param x  The base number.
+     * @param n  The exponent.
+     * @return   The result of x raised to the power of n.
+     */
+    public static double power(double x, long n) {
         if (x == 0) return 0;
         if (n == 0) return 1;
         if (n % 2 == 0) {
-            return util(x * x, n / 2);
-        } else return x * util(x, n - 1);
+            return power(x * x, n / 2);
+        } else return x * power(x, n - 1);
     }
 }

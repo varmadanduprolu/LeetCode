@@ -10,6 +10,12 @@ public class SqrtOfNumber_69 {
         //System.out.println(mySqrt(num));
     }
 
+    /**
+     * Calculates the square root of a number using binary search.
+     *
+     * @param x  The number to calculate the square root of.
+     * @return   The square root of the number.
+     */
     private static int mySqrt1(int x) {
         int start=0;
         int end=x;
@@ -24,7 +30,6 @@ public class SqrtOfNumber_69 {
                 start=mid+1;
             }
         }
-
         return end;
     }
     public static int mySqrt(int x) {
@@ -34,9 +39,7 @@ public class SqrtOfNumber_69 {
             if (i*i==x){
                 return i;
             }
-
         }
-
         return i-1;
     }
 }

@@ -11,6 +11,13 @@ public class RotateString_796 {
         System.out.println(rotateString(s,goal));
     }
 
+    /**
+     * Checks if a string can be rotated to form another string.
+     *
+     * @param s     The original string.
+     * @param goal  The target string.
+     * @return  True if the original string can be rotated to form the target string, false otherwise.
+     */
     private static boolean rotateString(String s, String goal) {
         StringBuilder res= new StringBuilder(s);
         int n=s.length();

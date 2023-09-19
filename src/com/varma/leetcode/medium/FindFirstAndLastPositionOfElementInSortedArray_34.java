@@ -8,41 +8,47 @@ public class FindFirstAndLastPositionOfElementInSortedArray_34 {
         Scanner sc=new Scanner(System.in);
         int len=sc.nextInt();
         int target=sc.nextInt();
-        int nums[]=new int[len];
-        for (int i = 0; i < nums.length; i++) {
-            nums[i]=sc.nextInt();
+        int height[]=new int[len];
+        for (int i = 0; i < height.length; i++) {
+            height[i]=sc.nextInt();
         }
-        System.out.println(Arrays.toString(findFirstAndLastPositionOfElementInSortedArray(nums,target)));
+        System.out.println(Arrays.toString(findFirstAndLastPositionOfElementInSortedArray(height,target)));
     }
 
-    private static int[] findFirstAndLastPositionOfElementInSortedArray(int[] nums, int target) {
+    /**
+     * Calculates the maximum area of water that can be trapped between vertical lines.
+     *
+     * @param height  The array of heights representing the vertical lines.
+     * @return        The maximum area of water that can be trapped.
+     */
+    private static int[] findFirstAndLastPositionOfElementInSortedArray(int[] height, int target) {
         // to find the first index
         int start=0;
-        int end= nums.length-1;
+        int end= height.length-1;
         int first=-1;
         int mid=0;
         while (start<=end){
             mid=(start+end)/2;
-            if (nums[mid]==target){
+            if (height[mid]==target){
                 first=mid;
                 end=mid-1;
             }
-            else if (nums[mid]<target){
+            else if (height[mid]<target){
                 start=mid+1;
             }else
                 end=mid-1;
         }
         //to find the last index
          start=0;
-         end= nums.length-1;
+         end= height.length-1;
          int last=-1;
         while (start<=end){
             mid=(start+end)/2;
-            if (nums[mid]==target){
+            if (height[mid]==target){
                 last=mid;
                 start=mid+1;
             }
-            else if (nums[mid]<target){
+            else if (height[mid]<target){
                 start=mid+1;
             }else
                 end=mid-1;

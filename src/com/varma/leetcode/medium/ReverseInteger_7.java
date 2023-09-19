@@ -11,6 +11,12 @@ public class ReverseInteger_7 {
         System.out.println(reverse(num));
     }
 
+    /**
+     * Reverses the digits of an integer.
+     *
+     * @param num  The integer to be reversed.
+     * @return     The reversed integer.
+     */
     private static int reverse(int num) {
         int result=0;
             while (num != 0) {
