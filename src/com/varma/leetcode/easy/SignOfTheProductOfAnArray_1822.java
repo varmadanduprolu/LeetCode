@@ -13,6 +13,12 @@ public class SignOfTheProductOfAnArray_1822 {
         System.out.println(arraySign(nums));
     }
 
+    /**
+     * Determines the sign of the product of an array of numbers.
+     *
+     * @param nums  The array of numbers.
+     * @return  The sign of the product: 1 for positive, -1 for negative, or 0 if the array contains a zero.
+     */
     private static int arraySign(int[] nums) {
         int res=0;
         for (int i = 0; i < nums.length; i++) {

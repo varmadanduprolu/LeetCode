@@ -28,7 +28,12 @@ public class ContainsDuplicate_217 {
         }
     }
 
-
+    /**
+     * Checks if an array contains any duplicate elements.
+     *
+     * @param nums  The array of integers to check for duplicates.
+     * @return True if the array contains duplicates, false otherwise.
+     */
     private static boolean containsDuplicate(int[] nums) {
 //        insertionSort(nums);
 //        int j=0;

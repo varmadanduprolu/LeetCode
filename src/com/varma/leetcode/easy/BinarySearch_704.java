@@ -14,6 +14,13 @@ public class BinarySearch_704 {
         System.out.println(binarySearch(nums,target));
     }
 
+    /**
+     * Performs binary search on a sorted array to find the index of the target element.
+     *
+     * @param nums    The sorted array to search in.
+     * @param target  The target element to find.
+     * @return        The index of the target element if found, otherwise -1.
+     */
     private static int binarySearch(int[] nums,int target) {
         int start=0;
         int end= nums.length-1;

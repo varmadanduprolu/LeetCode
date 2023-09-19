@@ -13,7 +13,12 @@ public class ThreeSum_15 {
         }
         System.out.println(threeSum(nums));
     }
-
+    /**
+     * Finds all unique triplets in the array that sum up to zero using the two-pointer approach.
+     *
+     * @param nums  The array of numbers.
+     * @return      A list of unique triplets that sum up to zero.
+     */
     //two pointer approach
     private static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();

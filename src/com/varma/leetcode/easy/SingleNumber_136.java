@@ -15,26 +15,27 @@ public class SingleNumber_136 {
         System.out.println(singleNumber(nums));
     }
 
+    /**
+     * Finds the single number in an array where all other numbers appear twice.
+     *
+     * @param nums  The array of numbers.
+     * @return      The single number.
+     */
     private static int singleNumber(int[] nums) {
         int x=0;
         HashMap<Integer,Integer> map=new HashMap<>();
-        for (int i:nums
-             ) {
-            if (map.containsKey(i)){
+        for (int i:nums) {
+            if (map.containsKey(i))
                 map.put(i,map.get(i)+1);
-            }
             else
                map.put(i,1);
         }
-        for(Map.Entry<Integer,Integer> i: map.entrySet())
-        {
-            if(i.getValue() == 1)
-            {
+        for(Map.Entry<Integer,Integer> i: map.entrySet()) {
+            if(i.getValue() == 1) {
                 x=i.getKey();
                 break;
             }
-
         }
-                return x;
+           return x;
     }
 }

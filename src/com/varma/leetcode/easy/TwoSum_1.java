@@ -17,6 +17,13 @@ public class TwoSum_1 {
 
     }
 
+    /**
+     * Finds two numbers in an array that add up to a target value.
+     *
+     * @param nums    The array of numbers.
+     * @param target  The target value.
+     * @return        An array containing the indices of the two numbers that add up to the target value.
+     */
     private static int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> map=new HashMap<>();
         int ans[]=new int[2];

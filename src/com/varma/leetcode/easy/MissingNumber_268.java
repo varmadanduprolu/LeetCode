@@ -12,7 +12,12 @@ public class MissingNumber_268 {
         }
         System.out.println(missingNumber(nums));
     }
-
+    /**
+     * Finds the missing number in an array of consecutive numbers from 0 to n.
+     *
+     * @param nums  The array of numbers.
+     * @return  The missing number.
+     */
     private static int missingNumber(int[] nums) {
         int sum=0;
         for (int i:nums) {

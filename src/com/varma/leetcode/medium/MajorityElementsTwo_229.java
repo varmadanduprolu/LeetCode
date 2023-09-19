@@ -15,6 +15,11 @@ public class MajorityElementsTwo_229 {
        // System.out.println(boyerMooresVotingAlgorithm(nums));
     }
 
+    /**
+     *
+     * @param nums
+     * @return
+     */
     private static List<Integer> majorityElementsTwo(int[] nums) {
         HashSet<Integer> list=new HashSet<>();
         for (int i = 0; i < nums.length-1; i++) {
@@ -46,6 +51,12 @@ public class MajorityElementsTwo_229 {
         return list1;
     }
 
+    /**
+     * Finds the majority elements that appear more than n/3 times in an array.
+     *
+     * @param nums  The array of numbers.
+     * @return      A list of majority elements.
+     */
     public static List<Integer> majorityElementsTwo1(int[] nums){
         HashMap<Integer,Integer> map=new HashMap<>();
         for (int i:nums

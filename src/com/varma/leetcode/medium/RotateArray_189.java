@@ -37,6 +37,12 @@ public class RotateArray_189 {
 
     }
 
+    /**
+     * Rotates an array to the right by k steps.
+     *
+     * @param nums  The array to be rotated.
+     * @param k     The number of steps to rotate the array.
+     */
     private static void rotateArray1(int[] nums, int k) {
         // Calculate the effective number of steps by taking the modulus of k with the length of the array
         k = k % nums.length;
@@ -48,7 +54,13 @@ public class RotateArray_189 {
         // Reverse the remaining elements starting from index k
         reverse(nums, k, nums.length - 1);
     }
-
+    /**
+     * Reverses the elements in a subarray of an array.
+     *
+     * @param nums   The array containing the subarray.
+     * @param left   The starting index of the subarray.
+     * @param right  The ending index of the subarray.
+     */
     private static void reverse(int[] nums, int left, int right) {
         // Reverse the elements in the subarray from index 'left' to index 'right'
 
@@ -63,5 +75,4 @@ public class RotateArray_189 {
             right--;
         }
     }
-
 }

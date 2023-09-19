@@ -12,6 +12,13 @@ public class ContainerWithMostWater_11 {
         }
         System.out.println(maxArea(height));
     }
+
+    /**
+     * Calculates the maximum area of water that can be trapped between vertical lines.
+     *
+     * @param height  The array of heights representing the vertical lines.
+     * @return The maximum area of water that can be trapped.
+     */
     private static int maxArea(int[] height) {
        int left=0;
         int right= height.length-1;

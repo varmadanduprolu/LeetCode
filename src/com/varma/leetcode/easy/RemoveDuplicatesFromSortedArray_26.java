@@ -14,6 +14,11 @@ public class RemoveDuplicatesFromSortedArray_26 {
         System.out.println(k);
     }
 
+    /***
+     *  return the number of unique elements in nums
+     * @param nums
+     * @return
+     */
     private static int removeDuplicates(int[] nums) {
         int j=0;
         for (int i = 1; i < nums.length; i++) {
@@ -21,7 +26,6 @@ public class RemoveDuplicatesFromSortedArray_26 {
                 j++;
                 nums[j]=nums[i];
             }
-
         }
         return j+1;
     }

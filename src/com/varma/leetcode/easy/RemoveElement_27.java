@@ -15,13 +15,19 @@ public class RemoveElement_27 {
     }
 
     private static int removeElement(int[] nums, int key) {
-        int res=0;
-        for (int i:nums) {
-            if(key!=i){
-                nums[res]=i;
+         // Initialize a variable 'res' to keep track of the resulting length of the modified array
+        int res = 0;
+        // Iterate over each element 'i' in the 'nums' array
+        for (int i : nums) {
+            // Check if the current element 'i' is not equal to the given 'key'
+            if (key != i) {
+                // Assign the current element 'i' to the 'res'-th position in the 'nums' array
+                nums[res] = i;
+                // Increment 'res' to keep track of the next position in the modified array
                 res++;
             }
         }
+        // Return the resulting length of the modified array
         return res;
     }
 }

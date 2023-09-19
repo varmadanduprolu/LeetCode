@@ -9,6 +9,12 @@ public class PowerOfTwo_231 {
         System.out.println(isPowerOfTwo(n));
     }
 
+    /**
+     * Checks if a number is a power of two.
+     *
+     * @param n  The number to check.
+     * @return   True if the number is a power of two, false otherwise.
+     */
     private static boolean isPowerOfTwo(int n) {
 
         while(n%2==0){

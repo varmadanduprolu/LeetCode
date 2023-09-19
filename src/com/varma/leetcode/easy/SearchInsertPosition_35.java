@@ -14,6 +14,13 @@ public class SearchInsertPosition_35 {
         System.out.println(searchInsertPosition(nums,target));
     }
 
+    /**
+     * Searches for the position to insert a target number in a sorted array.
+     *
+     * @param nums    The sorted array of numbers.
+     * @param target  The target number to insert.
+     * @return        The position to insert the target number.
+     */
     private static int searchInsertPosition(int[] nums,int target) {
         int low=0;
         int high= nums.length-1;
