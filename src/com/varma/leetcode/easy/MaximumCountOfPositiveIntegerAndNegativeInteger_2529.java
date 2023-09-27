@@ -1,4 +1,4 @@
-package com.varma.leetcode;
+package com.varma.leetcode.easy;
 
 import java.util.Scanner;
 
