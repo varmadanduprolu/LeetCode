@@ -11,8 +11,8 @@ public class MajorityElementsTwo_229 {
             nums[i]= sc.nextInt();
         }
        // System.out.println(majorityElementsTwo(nums));
-        System.out.println(majorityElementsTwo1(nums));
-       // System.out.println(boyerMooresVotingAlgorithm(nums));
+       //System.out.println(majorityElementsTwo1(nums));
+       System.out.println(boyerMooresVotingAlgorithm(nums));
     }
 
     /**
@@ -86,10 +86,8 @@ public class MajorityElementsTwo_229 {
         int ct1 = 0;
         int ct2 = 0;
         for (int i = 0; i < n; i++) {
-
             if (nums[i] == nums1) ct1++;
             else if (nums[i] == nums2) ct2++;
-
             else if (ct1 == 0) {
                 nums1 = nums[i];
                 ct1 = 1;
@@ -101,15 +99,16 @@ public class MajorityElementsTwo_229 {
                 ct2--;
             }
         }
-
+        System.out.println(ct1+ " "+ ct2);
+        System.out.println(nums1 +" "+nums2);
         List<Integer> ans = new ArrayList<>();
         ct1 = 0;
         ct2 = 0;
         for (int i = 0; i < n; i++) {
-            if (nums[i] == nums1) {
+            if ( nums[i] == nums1 ) {
                 ct1++;
             }
-            if (nums[i] == nums2) {
+            if ( nums[i] == nums2 ) {
                 ct2++;
             }
         }
