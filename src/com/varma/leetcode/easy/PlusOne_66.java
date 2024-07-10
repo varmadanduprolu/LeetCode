@@ -15,7 +15,9 @@ public class PlusOne_66 {
             nums[i] = sc.nextInt();
         }
 
+        System.out.println(Arrays.toString(plusOne1(nums)));
         System.out.println(Arrays.toString(plusOne2(nums)));
+        System.out.println(Arrays.toString(plusOne(nums)));
     }
 
     /**
