@@ -21,7 +21,6 @@ public class RegularExpressionMatching_10 {
                 } else {
                     return p.charAt(i) == '*';
                 }
-
             }
         }
         return count == s.length();
