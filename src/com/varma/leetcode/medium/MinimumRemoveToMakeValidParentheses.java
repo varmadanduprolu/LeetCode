@@ -5,6 +5,6 @@ public class MinimumRemoveToMakeValidParentheses {
 
     }
     public static String minRemoveToMakeValid(String s) {
-        
+        return "";
     }
 }
