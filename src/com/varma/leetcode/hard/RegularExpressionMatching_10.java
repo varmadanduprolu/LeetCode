@@ -18,16 +18,12 @@ public class RegularExpressionMatching_10 {
                     count++;
                 } else if (p.charAt(i) == '.') {
                     count++;
-                    continue;
-                } else if (p.charAt(i) == '*') {
-                    return true;
                 } else {
-                    return false;
+                    return p.charAt(i) == '*';
                 }
 
             }
         }
-        if (count == s.length()) return true;
-        return false;
+        return count == s.length();
     }
 }
